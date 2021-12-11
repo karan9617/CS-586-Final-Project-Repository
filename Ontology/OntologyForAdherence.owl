@@ -1,0 +1,1039 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#affects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#affects">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherenceLevel"/>
+        <rdfs:comment>Denotes the affected by property</rdfs:comment>
+        <rdfs:label>affects</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#changesFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#changesFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Persistence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageFactor"/>
+        <rdfs:comment>Denotes the changes recorded in the entity</rdfs:comment>
+        <rdfs:label>changesFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#decreasesBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#decreasesBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#numericalRelations"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Cholesterol"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherenceLevel"/>
+        <rdfs:comment>Denotes the decreasing property</rdfs:comment>
+        <rdfs:label>decreasesBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#dependsOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#dependsOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Persistence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PermissableGap"/>
+        <rdfs:comment>Denotes the dependance property</rdfs:comment>
+        <rdfs:label>dependsOn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#doesNotChanges -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#doesNotChanges">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PermissableGap"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherenceLevel"/>
+        <rdfs:label>doesNotChanges</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#fluctuatesWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#fluctuatesWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherenceLevel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Persistence"/>
+        <rdfs:comment>Denotes the fluctuation property</rdfs:comment>
+        <rdfs:label>fluctuatesWith</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#hasMaxPermissableGap -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#hasMaxPermissableGap">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Persistence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PermissableGap"/>
+        <rdfs:comment>Denotes the maximum permissable gap property</rdfs:comment>
+        <rdfs:label>hasMaxPermissableGap</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#increasesBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#increasesBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#numericalRelations"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherenceLevel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#RestingBP"/>
+        <rdfs:comment>Denotes the increasing property</rdfs:comment>
+        <rdfs:label>increaseBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#isAPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#isAPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ResidentFactor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EnvironmentFactor"/>
+        <rdfs:comment>Denotes the part of property</rdfs:comment>
+        <rdfs:label>isAPartOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#numericalRelations -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#numericalRelations">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherenceLevel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AverageGlucoseLevel"/>
+        <rdfs:comment>Denotes the numberical relation property</rdfs:comment>
+        <rdfs:label>numericalRelations</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#variesWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#variesWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#OccupationFactor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ChangeOfJob"/>
+        <rdfs:comment>Denotes the variability property</rdfs:comment>
+        <rdfs:label>variesWith</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageFactor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageQuantity"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Days -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Days">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PermissableGap"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>Days</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Dosage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Dosage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageFactor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:label>Dosage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#FloatingPointNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#FloatingPointNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Cholesterol"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>FloatingPointNumber</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Gaps -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Gaps">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#GapsOfMedication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:label>Gaps</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#GenderFactor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Gender</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Percentage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Percentage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherenceLevel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>Percentage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageQuantity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AcademicFactors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AcademicFactors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#SocialEnvironmentFactor"/>
+        <rdfs:comment>This entity specifies the academic factors for adherence</rdfs:comment>
+        <rdfs:label>AcademicFactors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherenceLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherenceLevel">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>The entity shows the adherence levels measured.</rdfs:comment>
+        <rdfs:label>AdherenceLevel</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherenceLevel"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>The entity shows the adherence levels measured.</owl:annotatedTarget>
+        <rdfs:comment>The entity shows tthe Adherence level</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AgeFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AgeFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DemographicFactor"/>
+        <rdfs:comment>The aging factor adherence is covered in this entity.</rdfs:comment>
+        <rdfs:label>AgeFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AverageGlucoseLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AverageGlucoseLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PhysicalHealthFactor"/>
+        <rdfs:comment>This entity specifies the glucose levels factors.</rdfs:comment>
+        <rdfs:label>AverageGlucoseLevel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AwarenessOfDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AwarenessOfDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HealthLiteracyFactor"/>
+        <rdfs:comment>This entity specifies the adherence due to awareness of disease.</rdfs:comment>
+        <rdfs:label>AwarenessOfDisease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#BeliefFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#BeliefFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#CognitiveFactors"/>
+        <rdfs:comment>This entity includes the belief ahderence affects.</rdfs:comment>
+        <rdfs:label>BeliefFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ChangeOfJob -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ChangeOfJob">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#OccupationFactor"/>
+        <rdfs:comment>This entity specifies the change of jobs factors for adherence.</rdfs:comment>
+        <rdfs:label>ChangeOfJob</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Cholesterol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Cholesterol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PhysicalHealthFactor"/>
+        <rdfs:comment>This entity specifies the cholesterol level adherence.</rdfs:comment>
+        <rdfs:label>Cholesterol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#CognitiveFactors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#CognitiveFactors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor"/>
+        <rdfs:comment>This entity includes the cognitive factors in adherence.</rdfs:comment>
+        <rdfs:label>CognitiveFactors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DemographicFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DemographicFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor"/>
+        <rdfs:comment>This entity covers the demographic factors.</rdfs:comment>
+        <rdfs:label>DemographicFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DepressionFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DepressionFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PsychologicalFactor"/>
+        <rdfs:comment>This entity specifies the depression factors for adherence.</rdfs:comment>
+        <rdfs:label>DepressionFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DisorderIssues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DisorderIssues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#MentalHealthFactor"/>
+        <rdfs:comment>Entity for specifying disorders for adherence.</rdfs:comment>
+        <rdfs:label>DisorderIssues</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DoctorVisitFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DoctorVisitFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HealthcareServiceFactor"/>
+        <rdfs:comment>This entity specifies the adherence factors due to number of visits to doctors.</rdfs:comment>
+        <rdfs:label>DoctorVisitFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageDuration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageDuration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageFactor"/>
+        <rdfs:comment>The duration for each ggrug is specified in this entity</rdfs:comment>
+        <rdfs:label>DosageDuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Persistence"/>
+        <rdfs:comment>This entity specifies the dosgage of different drugs</rdfs:comment>
+        <rdfs:label>DosageFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageQuantity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageQuantity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageFactor"/>
+        <rdfs:comment>Thhe drugs quantity given to patient is specified in this entity.</rdfs:comment>
+        <rdfs:label>DosageQuantity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EmotionFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EmotionFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PsychologicalFactor"/>
+        <rdfs:comment>This entity specifies the emotional factors for adherence.</rdfs:comment>
+        <rdfs:label>EmotionFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EmploymentIssues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EmploymentIssues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#OccupationFactor"/>
+        <rdfs:comment>This entity specifies the employment factors for adherence.</rdfs:comment>
+        <rdfs:label>EmployementIssues</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EnvironmentFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EnvironmentFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor"/>
+        <rdfs:comment>The environmental factors are covered in this entity.</rdfs:comment>
+        <rdfs:label>EnvironmentFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EthnicityFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EthnicityFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DemographicFactor"/>
+        <rdfs:comment>The ethinicity factor is included in this entity.</rdfs:comment>
+        <rdfs:label>EthnicityFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ExerciseBoredom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ExerciseBoredom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EmotionFactor"/>
+        <rdfs:comment>This entity specifies the exercise boredom factors for adherence.</rdfs:comment>
+        <rdfs:label>ExcerciseBoredom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ExerciseMotivationFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ExerciseMotivationFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#CognitiveFactors"/>
+        <rdfs:comment>This entity includes motivatiion in exercise adherence.</rdfs:comment>
+        <rdfs:label>ExerciseMotivationFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ExerciseRecommendationFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ExerciseRecommendationFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HealthcareServiceFactor"/>
+        <rdfs:comment>This entity specifies the exercise recommendation factors for adherence.</rdfs:comment>
+        <rdfs:label>ExerciseRecommendationFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#FamilyFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#FamilyFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#SocialEnvironmentFactor"/>
+        <rdfs:comment>This entity specifies the family factors for adherence.</rdfs:comment>
+        <rdfs:label>FamilyFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#FearOfDeath -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#FearOfDeath">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EmotionFactor"/>
+        <rdfs:comment>This entity specifies the fear from death factors for adherence.</rdfs:comment>
+        <rdfs:label>FearOfDeath</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#FearOfExercise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#FearOfExercise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EmotionFactor"/>
+        <rdfs:comment>This entity specifies the fear of exercise factors for adherence.</rdfs:comment>
+        <rdfs:label>FearOfExercise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#GapsOfMedication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#GapsOfMedication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Persistence"/>
+        <rdfs:comment>This entity denotes the gap taken by individual during a medication</rdfs:comment>
+        <rdfs:label>GapsOfMedication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#GenderFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#GenderFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DemographicFactor"/>
+        <rdfs:comment>This entity includes the gender factors affecting adherence to medication.</rdfs:comment>
+        <rdfs:label>GenderFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HealthLiteracyFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HealthLiteracyFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor"/>
+        <rdfs:comment>This entity specifies the literacy factors for adherence.</rdfs:comment>
+        <rdfs:label>HealthLiteracyFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HealthcareServiceFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HealthcareServiceFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor"/>
+        <rdfs:comment>This entity specifies the services healthcare factors for adherence.</rdfs:comment>
+        <rdfs:label>HealthcareServiceFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#LackOfInterest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#LackOfInterest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EmotionFactor"/>
+        <rdfs:comment>This entity specifies the lack of interest factors for adherence.</rdfs:comment>
+        <rdfs:label>LackOfInterest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#LackOfKnowledgeAboutExercise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#LackOfKnowledgeAboutExercise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HealthLiteracyFactor"/>
+        <rdfs:comment>This entity specifies the adherence due to lack of knowledge.</rdfs:comment>
+        <rdfs:label>LackOfKnowledgeAboutExercise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#MentalHealthAvoidance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#MentalHealthAvoidance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#MentalHealthFactor"/>
+        <rdfs:comment>Entities affecting adherencce in mental health illness.</rdfs:comment>
+        <rdfs:label>MentalHealthAvoidance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#MentalHealthFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#MentalHealthFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor"/>
+        <rdfs:comment>This entity specifies the mental health factors for adherence.</rdfs:comment>
+        <rdfs:label>MentalHealthFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#MoodFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#MoodFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PsychologicalFactor"/>
+        <rdfs:comment>This entity specifies the mood factors for adherence.</rdfs:comment>
+        <rdfs:label>MoodFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#NumberOfVisitsToCardiologist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#NumberOfVisitsToCardiologist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DoctorVisitFactor"/>
+        <rdfs:comment>This entity specifies the transporation factors for adherence.</rdfs:comment>
+        <rdfs:label>NumberOfVisitsToCardiologist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#OccupationFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#OccupationFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#SocialEnvironmentFactor"/>
+        <rdfs:comment>This entity specifies the occupational factors for adherence.</rdfs:comment>
+        <rdfs:label>OccupationFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#OvercomingAgingFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#OvercomingAgingFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#CognitiveFactors"/>
+        <rdfs:comment>This entity includes agin factor adherence.</rdfs:comment>
+        <rdfs:label>OvercomingAgingFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>The entity includes the factors affecting patient adherence to medication.</rdfs:comment>
+        <rdfs:label>PatientFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PermissableGap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PermissableGap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Persistence"/>
+        <rdfs:comment>This entity denotes the minimum permissable gap allowed between medication.</rdfs:comment>
+        <rdfs:label>PermissableGap</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Persistence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Persistence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor"/>
+        <rdfs:comment>Defines the persistence to medication</rdfs:comment>
+        <rdfs:label>Persistence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PhysicalHealthFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PhysicalHealthFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor"/>
+        <rdfs:comment>This entity specifies the physical vitals of individuals.</rdfs:comment>
+        <rdfs:label>PhysicalHealthFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PsychologicalFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PsychologicalFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor"/>
+        <rdfs:comment>This entity covers the psychological factors.</rdfs:comment>
+        <rdfs:label>PsychologicalFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#RaceFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#RaceFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DemographicFactor"/>
+        <rdfs:comment>The differrent race factors inifluencing adherence are specified in this entity.</rdfs:comment>
+        <rdfs:label>RaceFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ResidentFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ResidentFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EnvironmentFactor"/>
+        <rdfs:comment>The entity specifies the places for the patients.</rdfs:comment>
+        <rdfs:label>ResidentFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#RestingBP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#RestingBP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PhysicalHealthFactor"/>
+        <rdfs:comment>This entity specifies the blood pressure for individuals.</rdfs:comment>
+        <rdfs:label>RestingBP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Retired -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Retired">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#OccupationFactor"/>
+        <rdfs:comment>This entity specifies the age retirment factors for adherence.</rdfs:comment>
+        <rdfs:label>Retired</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#SocialEnvironmentFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#SocialEnvironmentFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor"/>
+        <rdfs:comment>This entity specifies the sooial environmental factors for adherence.</rdfs:comment>
+        <rdfs:label>SocialEnvironmentFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#SocioeconomicStatus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#SocioeconomicStatus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DemographicFactor"/>
+        <rdfs:comment>The socio-economic factors are included in this entity.</rdfs:comment>
+        <rdfs:label>SocioeconomicStatus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#TransportFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#TransportFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EnvironmentFactor"/>
+        <rdfs:comment>This entity specifies the transporation factors for adherence.</rdfs:comment>
+        <rdfs:label>TransportFactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Unemployed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Unemployed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#OccupationFactor"/>
+        <rdfs:comment>This entity specifies the unemployment factors for adherence.</rdfs:comment>
+        <rdfs:label>Umemployed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#WorkingLongHours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#WorkingLongHours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#OccupationFactor"/>
+        <rdfs:comment>This entity specifies the long working hours factors for adherence.</rdfs:comment>
+        <rdfs:label>WorkingLongHours</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment>Entities for Adherence to Medication for Cardiovascular Diseases</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherencePercentage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherencePercentage">
+        <Percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</Percentage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Alterations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Alterations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DisorderIssues"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Avoidance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Avoidance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DisorderIssues"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Female -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Female">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#GenderFactor"/>
+        <affects rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherencePercentage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HighBP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HighBP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#RestingBP"/>
+        <affects rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherencePercentage"/>
+        <FloatingPointNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">240</FloatingPointNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HighCholesterol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HighCholesterol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Cholesterol"/>
+        <affects rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherencePercentage"/>
+        <FloatingPointNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">240</FloatingPointNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HighDosage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HighDosage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageQuantity"/>
+        <affects rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherencePercentage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Intrusion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Intrusion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DisorderIssues"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#LowBP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#LowBP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#RestingBP"/>
+        <affects rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherencePercentage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#LowCholesterol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#LowCholesterol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Cholesterol"/>
+        <affects rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherencePercentage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Male -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Male">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#GenderFactor"/>
+        <affects rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherencePercentage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Rural -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Rural">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ResidentFactor"/>
+        <affects rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherencePercentage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Urban -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Urban">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ResidentFactor"/>
+        <affects rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherencePercentage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#lowDosage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#lowDosage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageQuantity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#noGaps -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#noGaps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#GapsOfMedication"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PermissableGap"/>
+        <Gaps rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</Gaps>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#permissableDosage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#permissableDosage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageQuantity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#permissableGap -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#permissableGap">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#GapsOfMedication"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PermissableGap"/>
+        <Gaps rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</Gaps>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#positiveReport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#positiveReport"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AcademicFactors"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AdherenceLevel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AgeFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AverageGlucoseLevel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#AwarenessOfDisease"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#BeliefFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ChangeOfJob"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Cholesterol"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#CognitiveFactors"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DemographicFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DepressionFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DisorderIssues"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DoctorVisitFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageDuration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#DosageQuantity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EmotionFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EmploymentIssues"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EnvironmentFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#EthnicityFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ExerciseBoredom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ExerciseMotivationFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ExerciseRecommendationFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#FamilyFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#FearOfDeath"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#FearOfExercise"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#GapsOfMedication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#GenderFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HealthLiteracyFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#HealthcareServiceFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#LackOfInterest"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#LackOfKnowledgeAboutExercise"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#MentalHealthAvoidance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#MentalHealthFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#MoodFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#NumberOfVisitsToCardiologist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#OccupationFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#OvercomingAgingFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PatientFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PermissableGap"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Persistence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PhysicalHealthFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#PsychologicalFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#RaceFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#ResidentFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#RestingBP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Retired"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#SocialEnvironmentFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#SocioeconomicStatus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#TransportFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#Unemployed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/karanvishwakarma/ontologies/2021/10/untitled-ontology-13#WorkingLongHours"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
